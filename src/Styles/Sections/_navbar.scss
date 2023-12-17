@@ -6,6 +6,7 @@ nav.navigation {
    align-items: center;
    padding: variables.$base-padding;
    font-family: map-get(variables.$fonts, 'condensed');
+   color: map-get(variables.$color, 'white');
    @media  (min-width: 768px){
     display: grid;
     grid-template-columns: 1.2fr 1.5fr;
@@ -69,10 +70,12 @@ nav.navigation {
     ol{
       list-style-type: decimal-leading-zero;
       list-style-position: inside;
+      color:map-get(variables.$color, 'white');
       li{
         
         a{
           text-decoration: none;
+          color:map-get(variables.$color, 'white');
         }
       }
       @media (min-width: 768px){

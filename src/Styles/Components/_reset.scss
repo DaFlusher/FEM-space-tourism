@@ -1,4 +1,4 @@
-
+@use '/src/Styles/Components/variables';
 
 //importing google fonts
   @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
@@ -9,6 +9,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Barlow', 'Roboto Condensed', 'Helvetica', 'Arial', sans-serif;
+    
 }
 
 ol{

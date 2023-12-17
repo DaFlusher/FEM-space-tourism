@@ -1,17 +1,24 @@
+import NavBar from "../Nav/NavBar";
+
 const PageLayout = ({children, backgroundImage}) => {
 
     const backgroundStyle = {
         backgroundImage: `url(${backgroundImage})` 
     };
     return ( 
-    
-    <main style={backgroundStyle}>
+    <div style={backgroundStyle}>
+        <NavBar/>
+    <main >
         
         <div >
             {children}
         </div>
 
-    </main> );
+    </main> 
+
+    </div>
+    
+);
 }
  
 export default PageLayout;

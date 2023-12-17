@@ -9,7 +9,7 @@ import NavBar from './Components/Nav/NavBar';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<NavBar />}>
+    <Route>
       <Route index element={<HomePage />} />
       <Route path="/destination" element={<Destination/>} />
       <Route path="/crew" element={<Crew/>} />
