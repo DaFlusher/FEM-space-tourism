@@ -1,0 +1,46 @@
+
+$color:(
+    'spaceblue': rgb(11, 13, 23),
+    'skyblue':rgb(208, 214, 249),
+    'white': rgb(255, 255, 255),
+    'nav-color': hsla(0,0%,100%,0.04)
+);
+
+$heading: (
+    'h1': 9.375rem,
+    'h2': 6.25rem,
+    'h3': 3.5rem,
+    'h4': 2rem,
+    'h5': 1.75rem
+);
+
+$text: (
+    'sh1': 1.75rem,
+    'sh2': 0.875rem,
+    'body': 1.125rem,
+    'nav': 1rem,
+    
+);
+
+$fonts:(
+    'barlow':"'Barlow', sans-serif",
+    'condensed': "'Barlow Condensed', sans-serif",
+    'bellefair': "'Bellefair', serif;"
+);
+
+//spacing variables
+$base-padding: 1rem;
+$padding-sm: 0.5rem;
+$padding-lg: 1.5rem;
+$base-margin: 0.75rem;
+$padding-md:1.25rem;
+
+//border variables
+$base-border-thickness: 1px;
+$base-border-radius: 0.75rem;
+
+
+//box-shadows
+$base-box-shadow: 8px 8px 20px rgba(255, 125, 26,0.3);
+$box-shadow: 8px 8px 20px rgba(29, 32, 37,0.3);
+

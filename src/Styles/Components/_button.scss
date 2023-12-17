@@ -1,0 +1,18 @@
+@use  '../Components/variables';
+
+%btn-lg{
+    padding: variables.$base-padding*2;
+    background-color: map-get(variables.$color, 'white');
+    color: map-get(variables.$color, 'spaceblue');
+    border-radius: 50%;
+    border: 1px solid  map-get(variables.$color, 'skyblue');
+    text-transform: uppercase;
+    &:hover{
+        border: 20px solid map-get(variables.$color, 'spaceblue');
+
+    }
+}
+
+.btn-lg{
+    @extend %btn-lg;
+}
