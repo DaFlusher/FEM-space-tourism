@@ -1,14 +1,16 @@
 @use  '../Components/variables';
 
 main{
-    padding: variables.$base-padding*2.5 variables.$base-padding;;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: variables.$base-padding*1.5 variables.$base-padding;
     text-align: center;
-    
+    height: 100vh;
+    place-items: center;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     overflow: hidden;
-    align-items: center;
     color: map-get(variables.$color, 'white');
     div{
         h5{
@@ -19,7 +21,7 @@ main{
         h1{
             font-size: clamp(map-get(variables.$heading,'h3'), 5rem,map-get(variables.$heading,'h1'));
             margin: 0;
-            padding: variables.$base-padding*1.25 variables.$base-padding;;
+            padding: variables.$base-padding;
         }
     
         p{

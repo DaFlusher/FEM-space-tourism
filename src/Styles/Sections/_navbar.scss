@@ -32,7 +32,7 @@ nav.navigation {
     position: absolute;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: calc(100vh + 128px);
     width: 70%;
     text-align: left;
     background-color:  map-get(variables.$color, 'spaceblue');

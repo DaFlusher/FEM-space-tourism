@@ -7,7 +7,7 @@
     border-radius: 50%;
     border: 1px solid  map-get(variables.$color, 'skyblue');
     text-transform: uppercase;
-    margin-top: 20%;
+    margin-top: 25%;
     &:hover{
         border: 20px solid map-get(variables.$color, 'skyblue');
 
