@@ -35,8 +35,9 @@ nav.navigation {
     height: 100vh;
     width: 70%;
     text-align: left;
-    background-color:  map-get(variables.$color, 'nav-color');
-    background-color: pink;
+    background-color:  map-get(variables.$color, 'spaceblue');
+    
+
     padding: variables.$base-padding;
     img.close-btn{
       margin-left: auto;
