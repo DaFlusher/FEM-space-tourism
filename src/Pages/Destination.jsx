@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import PageLayout from "../Components/Pagelayout/PageLayout";
 import Button from "../Components/Button";
 
@@ -7,6 +8,17 @@ import destinationBackgroundWeb from '../starter-code/assets/destination/backgro
 
 
 const Destination = () => {
+    const [matches, setMatches] = useState(
+        window.matchMedia("(min-width: 768px)").matches);
+    
+
+    useEffect(() => {
+        window
+        .matchMedia("(min-width: 768px)")
+        .addEventListener('change', e => setMatches( e.matches ));
+        return () => window.removeEventListener('change', setMatches)
+      }, []);
+      
     const backgroundImage1 = destinationBackgroundMobile;
 
     const backgroundImage2 = destinationBackgroundTablet;
@@ -14,7 +26,7 @@ const Destination = () => {
     const backgroundImage3 = destinationBackgroundWeb;
     return ( 
         <>
-            <PageLayout backgroundImage={backgroundImage3} >
+            <PageLayout {...matches && {backgroundImage: backgroundImage3}}{...!matches && {backgroundImage:backgroundImage2}} >
 
                 <div >
                     <h5>SO, YOU WANT TO TRAVEL TO</h5>
