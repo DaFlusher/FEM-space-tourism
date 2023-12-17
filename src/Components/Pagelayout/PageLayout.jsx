@@ -10,7 +10,7 @@ const PageLayout = ({children, backgroundImage}) => {
         <NavBar/>
     <main >
         
-        <div >
+        <div className="container" >
             {children}
         </div>
 

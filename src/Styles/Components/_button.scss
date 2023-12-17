@@ -12,6 +12,7 @@
     transition: border 0.3s ease-in-out;
     font-family: map-get(variables.$fonts, 'bellefair');
     font-size: map-get(variables.$text,'body');
+    
     &:hover{
         border: 20px solid map-get(variables.$color, 'skyblue');
 

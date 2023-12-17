@@ -29,31 +29,41 @@ nav.navigation {
    }
 
    div.nav-closed{
+   
     position: absolute;
     top: 0;
     right: 0;
     height: calc(100vh + 96px);
     width: 70%;
     text-align: left;
-    background-color:  map-get(variables.$color, 'spaceblue');
+    z-index: 3;
+    background-image: url("/src/starter-code/assets/destination/background-destination-mobile.jpg");
+    box-shadow: 2px 2px 20px 20px map-get(variables.$color, 'spaceblue') ;
     padding: variables.$base-padding;
     img.close-btn{
       margin-left: auto;
-      padding: variables.$base-padding
+      padding: variables.$base-padding;
+      background-image: url("/src/starter-code/assets/home/background-home-mobile.jpg");
     }
     ol{
       list-style-type: decimal-leading-zero;
       list-style-position: inside;
       padding: variables.$base-padding 0;
       color:map-get(variables.$color, 'white');
+      z-index: 3;
+        position: relative;
       
       li{
         padding: variables.$base-padding*2 variables.$base-padding;
+        z-index: 3;
+        position: relative;
         
         a{display: inline-block;
           text-decoration: none;
           padding: variables.$base-padding 0;
           color:map-get(variables.$color, 'white');
+          z-index: 3;
+          position: relative;
           
         }
     }
