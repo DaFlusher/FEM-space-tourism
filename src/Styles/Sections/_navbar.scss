@@ -32,15 +32,14 @@ nav.navigation {
     position: absolute;
     top: 0;
     right: 0;
-    height: calc(100vh + 128px);
+    height: calc(100vh + 96px);
     width: 70%;
     text-align: left;
     background-color:  map-get(variables.$color, 'spaceblue');
-    
-
     padding: variables.$base-padding;
     img.close-btn{
       margin-left: auto;
+      padding: variables.$base-padding
     }
     ol{
       list-style-type: decimal-leading-zero;
@@ -49,6 +48,7 @@ nav.navigation {
       color:map-get(variables.$color, 'white');
       
       li{
+        padding: variables.$base-padding*2 variables.$base-padding;
         
         a{display: inline-block;
           text-decoration: none;

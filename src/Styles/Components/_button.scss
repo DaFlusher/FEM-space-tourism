@@ -1,13 +1,17 @@
 @use  '../Components/variables';
 
 %btn-lg{
-    padding: variables.$base-padding*2;
+    padding: variables.$base-padding*3 variables.$base-padding*1.5;
+    align-items: center;
     background-color: map-get(variables.$color, 'white');
     color: map-get(variables.$color, 'spaceblue');
     border-radius: 50%;
     border: 1px solid  map-get(variables.$color, 'skyblue');
     text-transform: uppercase;
     margin-top: 25%;
+    transition: border 0.3s ease-in-out;
+    font-family: map-get(variables.$fonts, 'bellefair');
+    font-size: map-get(variables.$text,'body');
     &:hover{
         border: 20px solid map-get(variables.$color, 'skyblue');
 
