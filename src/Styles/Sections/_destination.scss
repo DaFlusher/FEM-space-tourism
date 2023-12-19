@@ -91,6 +91,13 @@ main{
                         line-height: 1.5625rem;
                         font-size: map-get(variables.$text, 'body');
                         padding: variables.$base-padding 0;
+                            
+
+                        @media (min-width: 1200px){
+                            line-height: 2rem;
+                            padding: variables.$base-padding*2 0;
+                        }
+                        
                     }
                     
                 
