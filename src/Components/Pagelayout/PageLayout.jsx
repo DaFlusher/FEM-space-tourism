@@ -1,4 +1,6 @@
+import Footer from "../Footer/Footer";
 import NavBar from "../Nav/NavBar";
+
 
 const PageLayout = ({children, backgroundImage}) => {
 
@@ -10,7 +12,11 @@ const PageLayout = ({children, backgroundImage}) => {
         <NavBar/>
     <main>
          {children}
+
+         <Footer/>
     </main> 
+
+   
 
     </div>
     

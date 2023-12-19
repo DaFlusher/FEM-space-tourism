@@ -1,0 +1,15 @@
+@use  '../Components/variables';
+
+footer{
+    padding: variables.$base-padding*1.5 variables.$base-padding;
+    text-align: center;
+    text-wrap: balance;
+    p{
+        color: map-get(variables.$color, 'white');
+        font-size: 0.875rem;
+        a{
+            color: map-get(variables.$color, 'skyblue');
+            
+        }
+    }
+}

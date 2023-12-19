@@ -12,6 +12,9 @@ import Titan from './Pages/Destination/Titan';
 import Mark from './Pages/Crew/Mark';
 import Ansari from './Pages/Crew/Ansari';
 import Victor from './Pages/Crew/Victor';
+import SpacePort from './Pages/Technology/SpacePort';
+import SpaceCapsule from './Pages/Technology/SpaceCapsule';
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,6 +29,8 @@ const router = createBrowserRouter(
       <Route path="/crew/mark" element={<Mark/>} />
       <Route path="/crew/victor" element={<Victor/>} />
       <Route path="/crew/ansari" element={<Ansari/>} />
+      <Route path="/technology/spaceport" element={<SpacePort/>}/>
+      <Route path="/technology/spacecapsule" element={<SpaceCapsule/>} />
     </Route>
   )
 )
