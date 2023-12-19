@@ -19,6 +19,10 @@ main{
     }
 
     @media(min-width: 1200px){
+        padding: variables.$base-padding*5;
+    }
+
+    @media(min-width: 1200px){
         
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -50,6 +54,7 @@ main{
                 margin: 0;
                 padding: variables.$base-padding;
                 text-transform: uppercase;
+                font-weight: 100;
                 font-family: map-get(variables.$fonts, 'bellefair');
                 @media(min-width: 1200px){
                     font-size: map-get(variables.$heading, 'h1');

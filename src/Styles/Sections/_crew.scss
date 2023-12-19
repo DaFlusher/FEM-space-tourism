@@ -1,1 +1,198 @@
 @use  '../Components/variables';
+
+div.section-three{
+    
+        div.container-crew{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: variables.$base-padding*1.5 variables.$base-padding;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        text-align: center;
+        color: map-get(variables.$color, 'white');
+
+        @media (min-width:768px){
+            padding:variables.$base-padding*4;
+        }
+        
+        @media(min-width: 1200px){
+            padding: variables.$base-padding*5;
+        }
+        
+            div.crew-text{
+                
+                color: map-get(variables.$color, 'skyblue');
+                @media(min-width:1200px){
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                    justify-content: center;
+                    column-gap: 1.875rem;
+                    max-width: 75rem;
+                }
+
+
+                div.crew-col-1{
+                    align-self: start;
+                   @media (min-width:1200px){ 
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    text-align: left;
+                    min-height: 40rem;
+                   }
+                
+                   
+                    h5{
+                        font-family: map-get(variables.$fonts, 'condensed');
+                        font-weight: 100;
+                        color: map-get(variables.$color, 'white');
+                        @media(min-width:768px){
+                            text-align: left;
+                        }
+                       
+
+                        span{
+                            padding-right: 0.425rem;
+                            color: #979797;
+                            @media (min-width: 768px){
+                                padding-right: 0.625rem;
+                            }
+
+                        }
+                        font-size: 1rem;
+                        @media(min-width: 768px){
+                            font-size: 1.25rem;
+                        }
+                        @media(min-width: 1200px){
+                            font-size: 1.75rem;
+                        }
+                        text-transform: uppercase;
+                        margin: 0;
+                        padding: variables.$base-padding 0;
+                        @media(min-width: 1200px){
+                            font-size: 1.75rem;
+                        }
+                    }
+                        div.crew-info{
+                        h4{
+                            color: #979797;
+                            padding: variables.$padding-sm 0;
+                            margin: 0;
+                            text-transform: uppercase;
+                            font-size: map-get(variables.$text, 'body');
+                            @media (min-width:1200px){
+                                font-size: 2rem;
+                                padding: variables.$base-padding*2 0;
+                                padding-bottom: 0;
+                            }
+                        }
+                        h3{ text-transform: uppercase;
+                            font-size: 1.5rem;
+                            padding: variables.$base-padding 0;
+                            padding-bottom: 0;
+                            margin: 0;
+                            font-weight: 100;
+                            color: map-get(variables.$color, 'white');
+                            font-family: map-get(variables.$fonts, 'bellefair');
+                            @media(min-width:768px){
+                                font-size: 2.5rem;
+                            }
+                            @media (min-width:1200px){
+                                font-size: map-get(variables.$heading, 'h3');
+                                padding: variables.$base-padding*2 0;
+                                padding-bottom: 0;
+                            }
+                        }
+                        
+                        p{
+                            margin: 0;
+                            line-height: 1.5625rem;
+                            font-size: 1rem;
+                            padding: variables.$base-padding 0;
+                                
+
+                            @media (min-width: 1200px){
+                                line-height: 2rem;
+                                padding: variables.$base-padding*2 0;
+                            }
+                            
+                            }
+                            
+                        
+                        }
+                    
+
+                    }
+
+                    div.crew-web{
+                        display: none;
+                        @media (min-width: 768px){
+                            display: block;
+                        }
+                    }
+
+                    div.navigation{
+
+                        
+                        
+                        ol.crew-navigation{
+                            list-style: none;
+                            margin: 0;
+                            padding: variables.$base-padding 0;
+                            display: flex;
+                            justify-content: center;
+                            font-size:0.875rem;
+                            @media(min-width: 768px){
+                                font-size: 1rem;
+                            }
+                        
+                            li{ padding: 0 0.25rem;
+                                a{ text-decoration: none;
+                                    color: map-get(variables.$color, 'skyblue');
+                                    &:hover{
+                                        color: map-get(variables.$color, 'white');
+                                        border-bottom: 1px solid white;
+                                        padding-bottom: variables.$padding-sm;
+                                    }
+                                }
+                            }
+                            
+                        
+                        }
+                 }
+
+                 div.crew-col-2{
+                        div.crew-image{
+                            padding: variables.$base-padding 0;
+                            img{
+                                max-width: 50%;
+                                @media(min-width: 1200px){
+                                    max-width: 100%;
+                                    padding:  variables.$base-padding*4 0;
+                                }
+                            }
+                        }
+                 }
+
+
+                 div.crew-mobile{
+                        @media (min-width: 768px){
+                            display: none;
+                        }
+                 }
+
+                 div.crew-web{
+                    @media (max-width: 768px){
+                        display: none;
+                    }
+                 }
+            }
+
+
+        } 
+
+       
+}

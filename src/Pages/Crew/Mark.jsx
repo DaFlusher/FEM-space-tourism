@@ -5,17 +5,17 @@ import CrewLayout from "./CrewLayout";
 import crewBackgroundMobile from '../../starter-code/assets/crew/background-crew-mobile.jpg';
 import crewBackgroundTablet from '../../starter-code/assets/crew/background-crew-tablet.jpg';
 import crewBackgroundWeb from '../../starter-code/assets/crew/background-crew-desktop.jpg';
-import doug from '../../starter-code/assets/crew/image-douglas-hurley.webp';
+import mark from '../../starter-code/assets/crew/image-mark-shuttleworth.webp';
 
 
-const Crew = () => {
-
-    
+const Mark = () => {
     return ( 
         <>
-            <CrewLayout name={`DOUGLAS HURLEY`} occupation={`Commander`} crewBio={`Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.`} crewImage={doug}/>
+            <CrewLayout name={`Mark Shuttleworth`} occupation={`Mission Specialist`} crewBio={`Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.`} crewImage={mark}/>
+    
+
         </>
      );
 }
  
-export default Crew;
+export default Mark;

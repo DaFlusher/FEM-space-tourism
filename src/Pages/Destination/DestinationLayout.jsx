@@ -6,6 +6,7 @@ import destinationBackgroundMobile from '../../starter-code/assets/destination/b
 import destinationBackgroundTablet from '../../starter-code/assets/destination/background-destination-tablet.jpg';
 import destinationBackgroundWeb from '../../starter-code/assets/destination/background-destination-desktop.jpg';
 
+
 const destinations = [
     {url: "/destination/", title: 'Moon'},
      {url: "/destination/mars", title: 'Mars'},
@@ -75,7 +76,7 @@ const DestinationLayout = ({ planetImage, planet, planetText, estTime, time, avg
                         
                         
                     </div>
-
+                
 
                 </div>
                 

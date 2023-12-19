@@ -5,17 +5,14 @@ import CrewLayout from "./CrewLayout";
 import crewBackgroundMobile from '../../starter-code/assets/crew/background-crew-mobile.jpg';
 import crewBackgroundTablet from '../../starter-code/assets/crew/background-crew-tablet.jpg';
 import crewBackgroundWeb from '../../starter-code/assets/crew/background-crew-desktop.jpg';
-import doug from '../../starter-code/assets/crew/image-douglas-hurley.webp';
+import victor from '../../starter-code/assets/crew/image-victor-glover.webp';
 
-
-const Crew = () => {
-
-    
+const Victor = () => {
     return ( 
         <>
-            <CrewLayout name={`DOUGLAS HURLEY`} occupation={`Commander`} crewBio={`Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.`} crewImage={doug}/>
+            <CrewLayout name={`Victor Glover`} occupation={`pilot`} crewBio={`Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the US. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. `} crewImage={victor}/>
         </>
      );
 }
  
-export default Crew;
+export default Victor;
