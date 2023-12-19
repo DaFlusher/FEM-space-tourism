@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
-import logo from '../../../src/starter-code/assets/shared/logo.svg';
-import menu from '../../../src/starter-code/assets/shared/icon-hamburger.svg';
-import closeBtn from '../../../src/starter-code/assets/shared/icon-close.svg';
+import logo from '../../starter-code/assets/shared/logo.svg';
+import menu from '../../starter-code/assets/shared/icon-hamburger.svg';
+import closeBtn from '../../starter-code/assets/shared/icon-close.svg';
+'../'
 
 
 const NavBar = () => {

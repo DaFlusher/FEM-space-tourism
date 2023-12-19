@@ -8,12 +8,8 @@ const PageLayout = ({children, backgroundImage}) => {
     return ( 
     <div style={backgroundStyle}>
         <NavBar/>
-    <main >
-        
-        <div className="container" >
-            {children}
-        </div>
-
+    <main>
+         {children}
     </main> 
 
     </div>

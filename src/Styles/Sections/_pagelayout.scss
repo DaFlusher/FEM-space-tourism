@@ -1,64 +1,9 @@
 @use  '../Components/variables';
 
 main{
-    height: 100vh;
     display: grid;
-    align-items: center;
-    justify-content: center;
-    
-    div.container{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: variables.$base-padding*1.5 variables.$base-padding;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        align-items: end;
-        column-gap: 3rem;
-        
-        overflow: hidden;
-        color: map-get(variables.$color, 'white');
-        div{   max-width: 37.5rem;
-            align-items: end;
-            text-align: left;
-            h5{
-                font-size: clamp(1rem, 1.25rem, 1.75rem);
-                margin: 0;
-                padding: variables.$base-padding;
-                @media(min-width: 1200px){
-                    font-size: 1.75rem;
-                }
-            }
-            h1{
-                font-size: clamp(map-get(variables.$heading,'h3'), 5rem,map-get(variables.$heading,'h1'));
-                margin: 0;
-                padding: variables.$base-padding;
-                text-transform: uppercase;
-                font-family: map-get(variables.$fonts, 'bellefair');
-                @media(min-width: 1200px){
-                    font-size: map-get(variables.$heading, 'h1');
-                    
-                }
-            }
-        
-            p{
-                padding: variables.$base-padding;
-                margin: 0;
-            }
-        }
-    @media (min-width:768px){
-        padding:variables.$base-padding*4;
-    }
-    
-    @media(min-width: 1200px){
-            display: flex;
-            justify-content: space-between;
-            padding:variables.$base-padding*4;
-            text-align: center;
-            text-wrap: balance;
-            
-        }
-        
-    }
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
    
 }

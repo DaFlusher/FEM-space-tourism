@@ -1,10 +1,10 @@
 @use 'Components/variables';
 @use 'Components/reset';
-
-
 @use 'Components/button';
-
-
 
 @use 'Sections/navbar';
 @use 'Sections/pagelayout';
+@use 'Sections/homepage';
+@use 'Sections/destination';
+@use 'Sections/crew';
+@use 'Sections/technology';

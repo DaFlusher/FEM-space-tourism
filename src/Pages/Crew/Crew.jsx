@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import PageLayout from "../Components/Pagelayout/PageLayout";
-import Button from "../Components/Button";
+import PageLayout from "../../Components/Pagelayout/PageLayout";
+import Button from "../../Components/Button/Button";
 
-import crewBackgroundMobile from '../starter-code/assets/crew/background-crew-mobile.jpg';
-import crewBackgroundTablet from '../starter-code/assets/crew/background-crew-tablet.jpg';
-import crewBackgroundWeb from '../starter-code/assets/crew/background-crew-desktop.jpg';
+import crewBackgroundMobile from '../../starter-code/assets/crew/background-crew-mobile.jpg';
+import crewBackgroundTablet from '../../starter-code/assets/crew/background-crew-tablet.jpg';
+import crewBackgroundWeb from '../../starter-code/assets/crew/background-crew-desktop.jpg';
 
 const Crew = () => {
 

@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import PageLayout from "../Components/Pagelayout/PageLayout";
-import Button from "../Components/Button";
+import PageLayout from "../../Components/Pagelayout/PageLayout";
+import Button from "../../Components/Button/Button";
 
-import technologyBackgroundMobile from '../starter-code/assets/technology/background-technology-mobile.jpg';
-import technologyBackgroundTablet from '../starter-code/assets/technology/background-technology-tablet.jpg';
-import technologyBackgroundWeb from '../starter-code/assets/technology/background-technology-desktop.jpg';
+import technologyBackgroundMobile from '../../starter-code/assets/technology/background-technology-mobile.jpg';
+import technologyBackgroundTablet from '../../starter-code/assets/technology/background-technology-tablet.jpg';
+import technologyBackgroundWeb from '../../starter-code/assets/technology/background-technology-desktop.jpg';
 
 const Technology = () => {
     const [matches, setMatches] = useState(

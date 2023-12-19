@@ -6,15 +6,26 @@
     background-color: map-get(variables.$color, 'white');
     color: map-get(variables.$color, 'spaceblue');
     border-radius: 50%;
-    border: 1px solid  map-get(variables.$color, 'skyblue');
+    border: 20px solid transparent;
     text-transform: uppercase;
-    margin-top: 25%;
+    margin-top: 20%;
+    @media(min-width: 768px){
+        margin-top: 10%;
+    }
     transition: border 0.3s ease-in-out;
     font-family: map-get(variables.$fonts, 'bellefair');
     font-size: map-get(variables.$text,'body');
     
+    @media (min-width:1200px){
+        padding: variables.$base-padding*6 variables.$base-padding*4;
+        font-size: map-get(variables.$text,'sh1');
+        margin-top: 0;
+    }
+    
     &:hover{
         border: 20px solid map-get(variables.$color, 'skyblue');
+        
+        
 
     }
 }
