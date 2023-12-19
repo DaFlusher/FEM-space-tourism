@@ -58,6 +58,7 @@ const CrewLayout = ({ occupation,name, crewBio, crewImage}) => {
                             
                                 <div className="crew-image mobile">
                                     <img src={crewImage} alt={name}/> 
+                                    <hr/>
                                 </div>  
 
                                 <div className="navigation crew-nav">

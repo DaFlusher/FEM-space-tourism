@@ -33,17 +33,16 @@ nav.navigation {
     position: absolute;
     top: 0;
     right: 0;
-    height: calc(100vh + 96px);
+    height: 100%;
     width: 70%;
     text-align: left;
     z-index: 3;
-    background-image: url("/src/starter-code/assets/destination/background-destination-mobile.jpg");
-    box-shadow: 2px 2px 20px 20px map-get(variables.$color, 'spaceblue') ;
+    background-color: map-get(variables.$color, 'spaceblue');
     padding: variables.$base-padding;
     img.close-btn{
       margin-left: auto;
       padding: variables.$base-padding;
-      background-image: url("/src/starter-code/assets/home/background-home-mobile.jpg");
+      
     }
     ol{
       list-style-type: decimal-leading-zero;

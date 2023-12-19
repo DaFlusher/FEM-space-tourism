@@ -168,7 +168,7 @@ div.section-three{
                         div.crew-image{
                             padding: variables.$base-padding 0;
                             img{
-                                max-width: 50%;
+                                max-width: 60%;
                                 @media(min-width: 1200px){
                                     max-width: 100%;
                                     padding:  variables.$base-padding*4 0;
@@ -179,6 +179,11 @@ div.section-three{
 
 
                  div.crew-mobile{
+                    hr{
+                        margin: 0;
+                        border-width: 0.5px;
+                        opacity: 0.2;
+                    }
                         @media (min-width: 768px){
                             display: none;
                         }
