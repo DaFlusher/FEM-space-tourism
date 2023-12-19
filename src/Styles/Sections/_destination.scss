@@ -89,18 +89,8 @@ main{
                     p{
                         margin: 0;
                         line-height: 1.5625rem;
-                        font-size: 0.9375rem;
+                        font-size: map-get(variables.$text, 'body');
                         padding: variables.$base-padding 0;
-                        @media (min-width:768px){
-                            font-size: 1rem;
-                            
-
-                        @media (min-width: 1200px){
-                            font-size: 1.125rem;
-                            line-height: 2rem;
-                            padding: variables.$base-padding*2 0;
-                        }
-                        }
                     }
                     
                 
