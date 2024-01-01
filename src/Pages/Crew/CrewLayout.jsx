@@ -12,10 +12,6 @@ import crewBackgroundWeb from '../../starter-code/assets/crew/background-crew-de
 import ansari from '../../starter-code/assets/crew/image-anousheh-ansari.webp';
 
 
-
-
-
-
 const crewMembers = [
     {url: "/crew/", number: '1'},
      {url: "/crew/mark", number: '2'},
@@ -45,8 +41,8 @@ const CrewLayout = ({ occupation,name, crewBio, crewImage}) => {
     return ( 
 
         <>
-            <div className="section-three">
-                <PageLayout {...matches && {backgroundImage: backgroundImage3}}{...!matches && {backgroundImage:backgroundImage2}} >
+            <div className="section-three"  >
+                <PageLayout {...matches && {backgroundImage: backgroundImage3}}{...!matches && {backgroundImage:backgroundImage2}}>
 
                 <div className="container-crew">
                     <div className="crew-text" >

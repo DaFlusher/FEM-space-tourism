@@ -5,9 +5,6 @@ main{
         display: grid;
         grid-template-columns: 1fr;
         padding: variables.$base-padding*1.5 variables.$base-padding;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
         align-items: end;
         column-gap: 2rem;
         text-align: center;

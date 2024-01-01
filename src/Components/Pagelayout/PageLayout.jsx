@@ -5,7 +5,12 @@ import NavBar from "../Nav/NavBar";
 const PageLayout = ({children, backgroundImage}) => {
 
     const backgroundStyle = {
-        backgroundImage: `url(${backgroundImage})` 
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat'
+        
+        
     };
     return ( 
     <div style={backgroundStyle}>

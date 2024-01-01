@@ -4,9 +4,6 @@ div.container-tech{
     display: grid;
     grid-template-columns: 1fr;
     padding: variables.$base-padding*1.5 0;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
     text-align: center;
     color: map-get(variables.$color, 'white');
     justify-self: end;
